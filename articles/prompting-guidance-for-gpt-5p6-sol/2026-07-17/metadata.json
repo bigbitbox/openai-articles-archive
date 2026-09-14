@@ -1,0 +1,20 @@
+{
+  "title": "Prompting guidance for GPT-5.6 Sol",
+  "snapshot_kind": "legacy_markdown",
+  "source_url": null,
+  "captured_at": null,
+  "published_at": null,
+  "first_repository_commit": "db13dbd6b1f6a733b8f2686e644b7cc17d78a4e4",
+  "first_repository_commit_at": "2026-07-17T18:10:00+08:00",
+  "directory_date_basis": "First repository commit date, not a verified webpage capture date.",
+  "notes": [
+    "Imported existing Markdown byte-for-byte, including its duplicate title.",
+    "Original page URL and capture time were not recorded. No historical HTML is available."
+  ],
+  "files": {
+    "article.md": {
+      "sha256": "5c2310798ce4b7b568a901d39b4dd9b0e6085c46431cca264b32477086aec065",
+      "bytes": 17140
+    }
+  }
+}

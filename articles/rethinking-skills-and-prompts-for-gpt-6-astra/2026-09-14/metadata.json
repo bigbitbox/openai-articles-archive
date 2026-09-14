@@ -1,0 +1,751 @@
+{
+  "title": "Rethinking skills and prompts for GPT-6 Astra",
+  "author": "Eric Provencher",
+  "publisher": "OpenAI",
+  "source_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+  "published_at": "2026-09-11",
+  "captured_at": "2026-09-14T08:01:42.975768+00:00",
+  "date_timezone": "Asia/Shanghai",
+  "snapshot_kind": "web_capture",
+  "offline_changes": [
+    "Resource links rewritten to local files; CSS dependencies downloaded.",
+    "Navigation links resolved to original website.",
+    "Scripts and hydration removed; offline view is static and uses a network-restricting CSP.",
+    "Original HTML and official Markdown stored as fetched."
+  ],
+  "files": {
+    "original.html": {
+      "source_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "resolved_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "retrieved_at": "2026-09-14T08:01:42.975768+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "source_sha256": "14b9b09e12b28890a6783a2dc060b37788c6f3dc1a8fd780732a128e003a85fb",
+      "sha256": "14b9b09e12b28890a6783a2dc060b37788c6f3dc1a8fd780732a128e003a85fb",
+      "bytes": 313435
+    },
+    "article.md": {
+      "source_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra.md",
+      "resolved_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra.md",
+      "retrieved_at": "2026-09-14T08:01:43.465900+00:00",
+      "content_type": "text/markdown; charset=utf-8",
+      "source_sha256": "a1deee4c0b3ca16a20385c27f0692e22d5150fdec81710c04742dd5da29f0468",
+      "sha256": "a1deee4c0b3ca16a20385c27f0692e22d5150fdec81710c04742dd5da29f0468",
+      "bytes": 6517
+    },
+    "assets/developers.openai.com/OpenAI_Developers.svg": {
+      "source_url": "https://developers.openai.com/OpenAI_Developers.svg",
+      "resolved_url": "https://developers.openai.com/OpenAI_Developers.svg",
+      "retrieved_at": "2026-09-14T08:01:44.035820+00:00",
+      "content_type": "image/svg+xml",
+      "source_sha256": "d5cc890ab11d5402efc37131624ae0cef1013643155c0ae9bf9aee67de21cd4f",
+      "sha256": "d5cc890ab11d5402efc37131624ae0cef1013643155c0ae9bf9aee67de21cd4f",
+      "bytes": 11728
+    },
+    "assets/developers.openai.com/_astro/AgentDocsDirective.CUMME-gW.css": {
+      "source_url": "https://developers.openai.com/_astro/AgentDocsDirective.CUMME-gW.css",
+      "resolved_url": "https://developers.openai.com/_astro/AgentDocsDirective.CUMME-gW.css",
+      "retrieved_at": "2026-09-14T08:01:44.035696+00:00",
+      "content_type": "text/css; charset=utf-8",
+      "source_sha256": "e371ab979da935f5a0d3139afd7a0b10f5a5297600f20102b26a99846614605c",
+      "sha256": "e371ab979da935f5a0d3139afd7a0b10f5a5297600f20102b26a99846614605c",
+      "bytes": 17436
+    },
+    "assets/developers.openai.com/_astro/PageLayout.DjuUoE2B.css": {
+      "source_url": "https://developers.openai.com/_astro/PageLayout.DjuUoE2B.css",
+      "resolved_url": "https://developers.openai.com/_astro/PageLayout.DjuUoE2B.css",
+      "retrieved_at": "2026-09-14T08:01:44.581186+00:00",
+      "content_type": "text/css; charset=utf-8",
+      "source_sha256": "5b5d55c5a6a92df4e89580f06658d500a3ec72a37c7e29891a25b5a4d06f2aa4",
+      "sha256": "c14fa51da767e50184b75f8354cae6353fccb0aebdc40abc92262988817e4031",
+      "bytes": 925703
+    },
+    "assets/developers.openai.com/favicon.png": {
+      "source_url": "https://developers.openai.com/favicon.png",
+      "resolved_url": "https://developers.openai.com/favicon.png",
+      "retrieved_at": "2026-09-14T08:01:43.963398+00:00",
+      "content_type": "image/png",
+      "source_sha256": "8d5575ee667ff715cd3e3074d5296edc68d5aadd89720d203e13131b68b22a04",
+      "sha256": "8d5575ee667ff715cd3e3074d5296edc68d5aadd89720d203e13131b68b22a04",
+      "bytes": 1841
+    },
+    "assets/developers.openai.com/images/blog/rethinking-skills-and-prompts-for-gpt-6-astra/cover.webp": {
+      "source_url": "https://developers.openai.com/images/blog/rethinking-skills-and-prompts-for-gpt-6-astra/cover.webp",
+      "resolved_url": "https://developers.openai.com/images/blog/rethinking-skills-and-prompts-for-gpt-6-astra/cover.webp",
+      "retrieved_at": "2026-09-14T08:01:44.378810+00:00",
+      "content_type": "image/webp",
+      "source_sha256": "36fc2237ee4b71b2cbe14e2db96839fd0b2153df4bca0f9bb7acd87535c8971f",
+      "sha256": "36fc2237ee4b71b2cbe14e2db96839fd0b2153df4bca0f9bb7acd87535c8971f",
+      "bytes": 139776
+    },
+    "assets/cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Bold.woff2": {
+      "source_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Bold.woff2",
+      "resolved_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Bold.woff2",
+      "retrieved_at": "2026-09-14T08:01:45.503885+00:00",
+      "content_type": "application/octet-stream",
+      "source_sha256": "950a34c04a54b0129c6b11a0ed17d6fe0efbba8c5caacad3c543e4f870471fc9",
+      "sha256": "950a34c04a54b0129c6b11a0ed17d6fe0efbba8c5caacad3c543e4f870471fc9",
+      "bytes": 50180
+    },
+    "assets/cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-BoldItalic.woff2": {
+      "source_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-BoldItalic.woff2",
+      "resolved_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-BoldItalic.woff2",
+      "retrieved_at": "2026-09-14T08:01:45.588385+00:00",
+      "content_type": "application/octet-stream",
+      "source_sha256": "47fe7380c45d34fcd77f6d139cebba306efcfdccef5d924d58d7fb0dd6b99474",
+      "sha256": "47fe7380c45d34fcd77f6d139cebba306efcfdccef5d924d58d7fb0dd6b99474",
+      "bytes": 53128
+    },
+    "assets/cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Medium.woff2": {
+      "source_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Medium.woff2",
+      "resolved_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Medium.woff2",
+      "retrieved_at": "2026-09-14T08:01:45.504383+00:00",
+      "content_type": "application/octet-stream",
+      "source_sha256": "eedca9d3e2e3ba3742b74aa828d5ac3000675157d8eb1902241b4be554e82907",
+      "sha256": "eedca9d3e2e3ba3742b74aa828d5ac3000675157d8eb1902241b4be554e82907",
+      "bytes": 50756
+    },
+    "assets/cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-MediumItalic.woff2": {
+      "source_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-MediumItalic.woff2",
+      "resolved_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-MediumItalic.woff2",
+      "retrieved_at": "2026-09-14T08:01:45.506050+00:00",
+      "content_type": "application/octet-stream",
+      "source_sha256": "a98b5206ab324997c001930ed4fcbe7deb194a70bdcc23e9784f6e666a5f4632",
+      "sha256": "a98b5206ab324997c001930ed4fcbe7deb194a70bdcc23e9784f6e666a5f4632",
+      "bytes": 54268
+    },
+    "assets/cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Regular.woff2": {
+      "source_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Regular.woff2",
+      "resolved_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Regular.woff2",
+      "retrieved_at": "2026-09-14T08:01:45.319846+00:00",
+      "content_type": "application/octet-stream",
+      "source_sha256": "5759128226d9323238d7ea0c94c4c1c4f16391cb05cdbd4eecadc1d80a9aed0a",
+      "sha256": "5759128226d9323238d7ea0c94c4c1c4f16391cb05cdbd4eecadc1d80a9aed0a",
+      "bytes": 48436
+    },
+    "assets/cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-RegularItalic.woff2": {
+      "source_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-RegularItalic.woff2",
+      "resolved_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-RegularItalic.woff2",
+      "retrieved_at": "2026-09-14T08:01:45.588449+00:00",
+      "content_type": "application/octet-stream",
+      "source_sha256": "a948747e9ff21ac9b158e67b97976d4f03e39178eab3879e403cc31ee33eb072",
+      "sha256": "a948747e9ff21ac9b158e67b97976d4f03e39178eab3879e403cc31ee33eb072",
+      "bytes": 51024
+    },
+    "assets/cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Semibold.woff2": {
+      "source_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Semibold.woff2",
+      "resolved_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Semibold.woff2",
+      "retrieved_at": "2026-09-14T08:01:45.504348+00:00",
+      "content_type": "application/octet-stream",
+      "source_sha256": "fee91812b2492934c7cb3cdebb97e0be557f1498e1a62df61e583b3baa57fa01",
+      "sha256": "fee91812b2492934c7cb3cdebb97e0be557f1498e1a62df61e583b3baa57fa01",
+      "bytes": 50920
+    },
+    "assets/cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-SemiboldItalic.woff2": {
+      "source_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-SemiboldItalic.woff2",
+      "resolved_url": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-SemiboldItalic.woff2",
+      "retrieved_at": "2026-09-14T08:01:45.505956+00:00",
+      "content_type": "application/octet-stream",
+      "source_sha256": "86931c99681090cc4e67ff3ca5ba3333c23786c17f235e02f8f3b29a2799eb1f",
+      "sha256": "86931c99681090cc4e67ff3ca5ba3333c23786c17f235e02f8f3b29a2799eb1f",
+      "bytes": 54436
+    },
+    "assets/developers.openai.com/_astro/KaTeX_AMS-Regular.BQhdFMY1.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_AMS-Regular.BQhdFMY1.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_AMS-Regular.BQhdFMY1.woff2",
+      "retrieved_at": "2026-09-14T08:01:46.530846+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+      "bytes": 28076
+    },
+    "assets/developers.openai.com/_astro/KaTeX_AMS-Regular.DMm9YOAa.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_AMS-Regular.DMm9YOAa.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_AMS-Regular.DMm9YOAa.woff",
+      "retrieved_at": "2026-09-14T08:01:46.497383+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+      "sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+      "bytes": 33516
+    },
+    "assets/developers.openai.com/_astro/KaTeX_AMS-Regular.DRggAlZN.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_AMS-Regular.DRggAlZN.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_AMS-Regular.DRggAlZN.ttf",
+      "retrieved_at": "2026-09-14T08:01:46.534186+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
+      "sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
+      "bytes": 63632
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Caligraphic-Bold.ATXxdsX0.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Bold.ATXxdsX0.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Bold.ATXxdsX0.ttf",
+      "retrieved_at": "2026-09-14T08:01:46.327257+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268",
+      "sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268",
+      "bytes": 12368
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Caligraphic-Bold.BEiXGLvX.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Bold.BEiXGLvX.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Bold.BEiXGLvX.woff",
+      "retrieved_at": "2026-09-14T08:01:46.534502+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+      "sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+      "bytes": 7716
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Bold.Dq_IR9rO.woff2",
+      "retrieved_at": "2026-09-14T08:01:46.314463+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+      "bytes": 6912
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Caligraphic-Regular.CTRA-rTL.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Regular.CTRA-rTL.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Regular.CTRA-rTL.woff",
+      "retrieved_at": "2026-09-14T08:01:46.528644+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+      "sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+      "bytes": 7656
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Regular.Di6jR-x-.woff2",
+      "retrieved_at": "2026-09-14T08:01:46.494402+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+      "bytes": 6908
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Caligraphic-Regular.wX97UBjC.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Regular.wX97UBjC.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Caligraphic-Regular.wX97UBjC.ttf",
+      "retrieved_at": "2026-09-14T08:01:47.201205+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7",
+      "sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7",
+      "bytes": 12344
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Fraktur-Bold.BdnERNNW.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Bold.BdnERNNW.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Bold.BdnERNNW.ttf",
+      "retrieved_at": "2026-09-14T08:01:47.119418+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1",
+      "sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1",
+      "bytes": 19584
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Fraktur-Bold.BsDP51OF.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Bold.BsDP51OF.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Bold.BsDP51OF.woff",
+      "retrieved_at": "2026-09-14T08:01:47.104448+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+      "sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+      "bytes": 13296
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Fraktur-Bold.CL6g_b3V.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Bold.CL6g_b3V.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Bold.CL6g_b3V.woff2",
+      "retrieved_at": "2026-09-14T08:01:47.107489+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+      "bytes": 11348
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Fraktur-Regular.CB_wures.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Regular.CB_wures.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Regular.CB_wures.ttf",
+      "retrieved_at": "2026-09-14T08:01:47.652692+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3",
+      "sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3",
+      "bytes": 19572
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Fraktur-Regular.CTYiF6lA.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Regular.CTYiF6lA.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Regular.CTYiF6lA.woff2",
+      "retrieved_at": "2026-09-14T08:01:47.104679+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+      "bytes": 11316
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Fraktur-Regular.Dxdc4cR9.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Regular.Dxdc4cR9.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Fraktur-Regular.Dxdc4cR9.woff",
+      "retrieved_at": "2026-09-14T08:01:47.117291+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+      "sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+      "bytes": 13208
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Bold.Cx986IdX.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Bold.Cx986IdX.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Bold.Cx986IdX.woff2",
+      "retrieved_at": "2026-09-14T08:01:47.427056+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+      "bytes": 25324
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Bold.Jm3AIy58.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Bold.Jm3AIy58.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Bold.Jm3AIy58.woff",
+      "retrieved_at": "2026-09-14T08:01:48.325638+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+      "sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+      "bytes": 29912
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Bold.waoOVXN0.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Bold.waoOVXN0.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Bold.waoOVXN0.ttf",
+      "retrieved_at": "2026-09-14T08:01:47.816859+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8",
+      "sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8",
+      "bytes": 51336
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-BoldItalic.DxDJ3AOS.woff2",
+      "retrieved_at": "2026-09-14T08:01:47.734577+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+      "bytes": 16780
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-BoldItalic.DzxPMmG6.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-BoldItalic.DzxPMmG6.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-BoldItalic.DzxPMmG6.ttf",
+      "retrieved_at": "2026-09-14T08:01:47.757094+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f",
+      "sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f",
+      "bytes": 32968
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-BoldItalic.SpSLRI95.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-BoldItalic.SpSLRI95.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-BoldItalic.SpSLRI95.woff",
+      "retrieved_at": "2026-09-14T08:01:47.819876+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+      "sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+      "bytes": 19412
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Italic.3WenGoN9.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Italic.3WenGoN9.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Italic.3WenGoN9.ttf",
+      "retrieved_at": "2026-09-14T08:01:47.876718+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a",
+      "sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a",
+      "bytes": 33580
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Italic.BMLOBm91.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Italic.BMLOBm91.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Italic.BMLOBm91.woff",
+      "retrieved_at": "2026-09-14T08:01:48.327592+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+      "sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+      "bytes": 19676
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Italic.NWA7e6Wa.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Italic.NWA7e6Wa.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Italic.NWA7e6Wa.woff2",
+      "retrieved_at": "2026-09-14T08:01:48.701782+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+      "bytes": 16988
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Regular.B22Nviop.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Regular.B22Nviop.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Regular.B22Nviop.woff2",
+      "retrieved_at": "2026-09-14T08:01:48.702314+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+      "bytes": 26272
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Regular.Dr94JaBh.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Regular.Dr94JaBh.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Regular.Dr94JaBh.woff",
+      "retrieved_at": "2026-09-14T08:01:48.654011+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+      "sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+      "bytes": 30772
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Main-Regular.ypZvNtVU.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Main-Regular.ypZvNtVU.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Main-Regular.ypZvNtVU.ttf",
+      "retrieved_at": "2026-09-14T08:01:48.704543+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830",
+      "sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830",
+      "bytes": 53580
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Math-BoldItalic.B3XSjfu4.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Math-BoldItalic.B3XSjfu4.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Math-BoldItalic.B3XSjfu4.ttf",
+      "retrieved_at": "2026-09-14T08:01:48.701950+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5",
+      "sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5",
+      "bytes": 31196
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Math-BoldItalic.CZnvNsCZ.woff2",
+      "retrieved_at": "2026-09-14T08:01:48.652744+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+      "bytes": 16400
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Math-BoldItalic.iY-2wyZ7.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Math-BoldItalic.iY-2wyZ7.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Math-BoldItalic.iY-2wyZ7.woff",
+      "retrieved_at": "2026-09-14T08:01:48.959681+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+      "sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+      "bytes": 18668
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Math-Italic.DA0__PXp.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Math-Italic.DA0__PXp.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Math-Italic.DA0__PXp.woff",
+      "retrieved_at": "2026-09-14T08:01:48.961991+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+      "sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+      "bytes": 18748
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Math-Italic.flOr_0UB.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Math-Italic.flOr_0UB.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Math-Italic.flOr_0UB.ttf",
+      "retrieved_at": "2026-09-14T08:01:49.643357+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a",
+      "sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a",
+      "bytes": 31308
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Math-Italic.t53AETM-.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Math-Italic.t53AETM-.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Math-Italic.t53AETM-.woff2",
+      "retrieved_at": "2026-09-14T08:01:49.255360+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+      "bytes": 16440
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Bold.CFMepnvq.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Bold.CFMepnvq.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Bold.CFMepnvq.ttf",
+      "retrieved_at": "2026-09-14T08:01:49.319428+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0",
+      "sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0",
+      "bytes": 24504
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Bold.D1sUS0GD.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Bold.D1sUS0GD.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Bold.D1sUS0GD.woff2",
+      "retrieved_at": "2026-09-14T08:01:49.255121+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+      "bytes": 12216
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Bold.DbIhKOiC.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Bold.DbIhKOiC.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Bold.DbIhKOiC.woff",
+      "retrieved_at": "2026-09-14T08:01:49.258109+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+      "sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+      "bytes": 14408
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Italic.C3H0VqGB.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Italic.C3H0VqGB.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Italic.C3H0VqGB.woff2",
+      "retrieved_at": "2026-09-14T08:01:49.255390+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+      "bytes": 12028
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Italic.DN2j7dab.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Italic.DN2j7dab.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Italic.DN2j7dab.woff",
+      "retrieved_at": "2026-09-14T08:01:49.488687+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+      "sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+      "bytes": 14112
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Italic.YYjJ1zSn.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Italic.YYjJ1zSn.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Italic.YYjJ1zSn.ttf",
+      "retrieved_at": "2026-09-14T08:01:49.494164+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083",
+      "sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083",
+      "bytes": 22364
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Regular.BNo7hRIc.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Regular.BNo7hRIc.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Regular.BNo7hRIc.ttf",
+      "retrieved_at": "2026-09-14T08:01:49.825208+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad",
+      "sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad",
+      "bytes": 19436
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Regular.CS6fqUqJ.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Regular.CS6fqUqJ.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Regular.CS6fqUqJ.woff",
+      "retrieved_at": "2026-09-14T08:01:50.027535+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+      "sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+      "bytes": 12316
+    },
+    "assets/developers.openai.com/_astro/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_SansSerif-Regular.DDBCnlJ7.woff2",
+      "retrieved_at": "2026-09-14T08:01:49.802173+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+      "bytes": 10344
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Script-Regular.C5JkGWo-.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Script-Regular.C5JkGWo-.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Script-Regular.C5JkGWo-.ttf",
+      "retrieved_at": "2026-09-14T08:01:50.014189+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67",
+      "sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67",
+      "bytes": 16648
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Script-Regular.D3wIWfF6.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Script-Regular.D3wIWfF6.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Script-Regular.D3wIWfF6.woff2",
+      "retrieved_at": "2026-09-14T08:01:50.163065+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+      "bytes": 9644
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Script-Regular.D5yQViql.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Script-Regular.D5yQViql.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Script-Regular.D5yQViql.woff",
+      "retrieved_at": "2026-09-14T08:01:50.237638+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+      "sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+      "bytes": 10588
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size1-Regular.C195tn64.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size1-Regular.C195tn64.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size1-Regular.C195tn64.woff",
+      "retrieved_at": "2026-09-14T08:01:50.313409+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+      "sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+      "bytes": 6496
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size1-Regular.Dbsnue_I.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size1-Regular.Dbsnue_I.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size1-Regular.Dbsnue_I.ttf",
+      "retrieved_at": "2026-09-14T08:01:50.428247+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b",
+      "sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b",
+      "bytes": 12228
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size1-Regular.mCD8mA8B.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size1-Regular.mCD8mA8B.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size1-Regular.mCD8mA8B.woff2",
+      "retrieved_at": "2026-09-14T08:01:50.314321+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+      "bytes": 5468
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size2-Regular.B7gKUWhC.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size2-Regular.B7gKUWhC.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size2-Regular.B7gKUWhC.ttf",
+      "retrieved_at": "2026-09-14T08:01:50.314214+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b",
+      "sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b",
+      "bytes": 11508
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size2-Regular.Dy4dx90m.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size2-Regular.Dy4dx90m.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size2-Regular.Dy4dx90m.woff2",
+      "retrieved_at": "2026-09-14T08:01:50.687882+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+      "bytes": 5208
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size2-Regular.oD1tc_U0.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size2-Regular.oD1tc_U0.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size2-Regular.oD1tc_U0.woff",
+      "retrieved_at": "2026-09-14T08:01:50.557401+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+      "sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+      "bytes": 6188
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size3-Regular.CTq5MqoE.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size3-Regular.CTq5MqoE.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size3-Regular.CTq5MqoE.woff",
+      "retrieved_at": "2026-09-14T08:01:50.937169+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+      "sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+      "bytes": 4420
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size3-Regular.DgpXs0kz.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size3-Regular.DgpXs0kz.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size3-Regular.DgpXs0kz.ttf",
+      "retrieved_at": "2026-09-14T08:01:50.722997+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082",
+      "sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082",
+      "bytes": 7588
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size4-Regular.BF-4gkZK.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size4-Regular.BF-4gkZK.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size4-Regular.BF-4gkZK.woff",
+      "retrieved_at": "2026-09-14T08:01:50.851466+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+      "sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+      "bytes": 5980
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size4-Regular.DWFBv043.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size4-Regular.DWFBv043.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size4-Regular.DWFBv043.ttf",
+      "retrieved_at": "2026-09-14T08:01:50.851829+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877",
+      "sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877",
+      "bytes": 10364
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Size4-Regular.Dl5lxZxV.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Size4-Regular.Dl5lxZxV.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Size4-Regular.Dl5lxZxV.woff2",
+      "retrieved_at": "2026-09-14T08:01:50.851929+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+      "bytes": 4928
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Typewriter-Regular.C0xS9mPB.woff": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Typewriter-Regular.C0xS9mPB.woff",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Typewriter-Regular.C0xS9mPB.woff",
+      "retrieved_at": "2026-09-14T08:01:51.050502+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+      "sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+      "bytes": 16028
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Typewriter-Regular.CO6r4hn1.woff2": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Typewriter-Regular.CO6r4hn1.woff2",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Typewriter-Regular.CO6r4hn1.woff2",
+      "retrieved_at": "2026-09-14T08:01:51.207331+00:00",
+      "content_type": "font/woff2",
+      "source_sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+      "bytes": 13568
+    },
+    "assets/developers.openai.com/_astro/KaTeX_Typewriter-Regular.D3Ib7_Hf.ttf": {
+      "source_url": "https://developers.openai.com/_astro/KaTeX_Typewriter-Regular.D3Ib7_Hf.ttf",
+      "resolved_url": "https://developers.openai.com/_astro/KaTeX_Typewriter-Regular.D3Ib7_Hf.ttf",
+      "retrieved_at": "2026-09-14T08:01:51.268171+00:00",
+      "content_type": "font/ttf",
+      "source_sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa",
+      "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa",
+      "bytes": 27556
+    },
+    "assets/developers.openai.com/fonts/OpenAISans-Bold.woff": {
+      "source_url": "https://developers.openai.com/fonts/OpenAISans-Bold.woff",
+      "resolved_url": "https://developers.openai.com/fonts/OpenAISans-Bold.woff",
+      "retrieved_at": "2026-09-14T08:01:51.357853+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "526dfa7f24f84937c3d966fb938eb1f56b3ccc28e68b075e5c0e622255ef4711",
+      "sha256": "526dfa7f24f84937c3d966fb938eb1f56b3ccc28e68b075e5c0e622255ef4711",
+      "bytes": 63824
+    },
+    "assets/developers.openai.com/fonts/OpenAISans-Light.woff": {
+      "source_url": "https://developers.openai.com/fonts/OpenAISans-Light.woff",
+      "resolved_url": "https://developers.openai.com/fonts/OpenAISans-Light.woff",
+      "retrieved_at": "2026-09-14T08:01:51.506579+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "61ee3361b4a7a1594a057c363671cb9188c1da1e7ea264bc9f1d44662684c4e9",
+      "sha256": "61ee3361b4a7a1594a057c363671cb9188c1da1e7ea264bc9f1d44662684c4e9",
+      "bytes": 60000
+    },
+    "assets/developers.openai.com/fonts/OpenAISans-Medium.woff": {
+      "source_url": "https://developers.openai.com/fonts/OpenAISans-Medium.woff",
+      "resolved_url": "https://developers.openai.com/fonts/OpenAISans-Medium.woff",
+      "retrieved_at": "2026-09-14T08:01:51.609702+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "d9aa5b6aa6be79ea7a1d612479d264fa91a6371eeaef3ea527bed2ec5e9af30d",
+      "sha256": "d9aa5b6aa6be79ea7a1d612479d264fa91a6371eeaef3ea527bed2ec5e9af30d",
+      "bytes": 64328
+    },
+    "assets/developers.openai.com/fonts/OpenAISans-Regular.woff": {
+      "source_url": "https://developers.openai.com/fonts/OpenAISans-Regular.woff",
+      "resolved_url": "https://developers.openai.com/fonts/OpenAISans-Regular.woff",
+      "retrieved_at": "2026-09-14T08:01:51.609328+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "f8bebf7b62b5216cb7fdf4cead53967f888fee5373c51ab83ce2e834912da111",
+      "sha256": "f8bebf7b62b5216cb7fdf4cead53967f888fee5373c51ab83ce2e834912da111",
+      "bytes": 61616
+    },
+    "assets/developers.openai.com/fonts/OpenAISans-Semibold.woff": {
+      "source_url": "https://developers.openai.com/fonts/OpenAISans-Semibold.woff",
+      "resolved_url": "https://developers.openai.com/fonts/OpenAISans-Semibold.woff",
+      "retrieved_at": "2026-09-14T08:01:51.672521+00:00",
+      "content_type": "font/woff",
+      "source_sha256": "6833255d7d8a5f25aeb1d667a7806e6d053402f33ba9be4f6413a70940bb7183",
+      "sha256": "6833255d7d8a5f25aeb1d667a7806e6d053402f33ba9be4f6413a70940bb7183",
+      "bytes": 64712
+    },
+    "assets/developers.openai.com/images/codex/app/mobile-setup-light.webp": {
+      "source_url": "https://developers.openai.com/images/codex/app/mobile-setup-light.webp",
+      "resolved_url": "https://developers.openai.com/images/codex/app/mobile-setup-light.webp",
+      "retrieved_at": "2026-09-14T08:01:51.672380+00:00",
+      "content_type": "image/webp",
+      "source_sha256": "96b86eb5166e79da8a300ca50f587c0570ac77717bb8bf2d06007d43540d9825",
+      "sha256": "96b86eb5166e79da8a300ca50f587c0570ac77717bb8bf2d06007d43540d9825",
+      "bytes": 30912
+    },
+    "assets/developers.openai.com/images/codex/codex-wallpaper-1.webp": {
+      "source_url": "https://developers.openai.com/images/codex/codex-wallpaper-1.webp",
+      "resolved_url": "https://developers.openai.com/images/codex/codex-wallpaper-1.webp",
+      "retrieved_at": "2026-09-14T08:01:51.929540+00:00",
+      "content_type": "image/webp",
+      "source_sha256": "0a8045949795bf6f70167b582b53f5a0c8b3ae2adafd1be7445ca0a7e2613bf1",
+      "sha256": "0a8045949795bf6f70167b582b53f5a0c8b3ae2adafd1be7445ca0a7e2613bf1",
+      "bytes": 58836
+    },
+    "index.html": {
+      "sha256": "3db515ded188717e412d321f05acb28a55e995577c98f3ca1da63e2601ce540c",
+      "bytes": 258947
+    }
+  }
+}
